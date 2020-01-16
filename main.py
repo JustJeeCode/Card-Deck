@@ -10,24 +10,83 @@ Todo List:
 from deck import Suit
 from deck import Number
 from deck import Colour
+from deck import Misc
 
 
 def main():
     #Card Deck
     #Numbers
-    Number.card_numb = ["ace ", 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10]
+    Number.card_numb = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
 
     #Colours
-    Colour.red = "red"
-    Colour.black = "black"
+    Colour.red = "Red"
+    Colour.black = "Black"
 
     #Suits
-    Suit.clubs = [Number.card_numb[0] + Colour.black + " ♣️"]
-    Suit.diamonds = []
-    Suit.hearts = []
-    Suit.spades = []
+    #Clubs
+    Suit.clubs = ["Number: " + Number.card_numb[0] + ". Colour: " + Colour.black + ". Suit: " + " ♣️.", 
+    "Number: " + Number.card_numb[1] + ". Colour: " + Colour.black + ". Suit: " + " ♣️.",
+    "Number: " + Number.card_numb[2] + ". Colour: " + Colour.black + ". Suit: " + " ♣️.",
+    "Number: " + Number.card_numb[3] + ". Colour: " + Colour.black + ". Suit: " + " ♣️.",
+    "Number: " + Number.card_numb[4] + ". Colour: " + Colour.black + ". Suit: " + " ♣️.",
+    "Number: " + Number.card_numb[5] + ". Colour: " + Colour.black + ". Suit: " + " ♣️.",
+    "Number: " + Number.card_numb[6] + ". Colour: " + Colour.black + ". Suit: " + " ♣️.",
+    "Number: " + Number.card_numb[7] + ". Colour: " + Colour.black + ". Suit: " + " ♣️.",
+    "Number: " + Number.card_numb[8] + ". Colour: " + Colour.black + ". Suit: " + " ♣️.",
+    "Number: " + Number.card_numb[9] + ". Colour: " + Colour.black + ". Suit: " + " ♣️."]
 
-    print(Suit.clubs)
+    #Jack
+    #Queen
+    #King
+
+    #Diamonds
+    Suit.diamonds = ["Number: " + Number.card_numb[0] + ". Colour: " + Colour.red + ". Suit: " + " ♦️.", 
+    "Number: " + Number.card_numb[1] + ". Colour: " + Colour.red + ". Suit: " + " ♦️.",
+    "Number: " + Number.card_numb[2] + ". Colour: " + Colour.red + ". Suit: " + " ♦️.",
+    "Number: " + Number.card_numb[3] + ". Colour: " + Colour.red + ". Suit: " + " ♦️.",
+    "Number: " + Number.card_numb[4] + ". Colour: " + Colour.red + ". Suit: " + " ♦️.",
+    "Number: " + Number.card_numb[5] + ". Colour: " + Colour.red + ". Suit: " + " ♦️.",
+    "Number: " + Number.card_numb[6] + ". Colour: " + Colour.red + ". Suit: " + " ♦️.",
+    "Number: " + Number.card_numb[7] + ". Colour: " + Colour.red + ". Suit: " + " ♦️.",
+    "Number: " + Number.card_numb[8] + ". Colour: " + Colour.red + ". Suit: " + " ♦️.",
+    "Number: " + Number.card_numb[9] + ". Colour: " + Colour.red + ". Suit: " + " ♦️."]
+
+    #Jack
+    #Queen
+    #King
+
+    #Hearts
+    Suit.hearts = ["Number: " + Number.card_numb[0] + ". Colour: " + Colour.red + ". Suit: " + " ♥️.", 
+    "Number: " + Number.card_numb[1] + ". Colour: " + Colour.red + ". Suit: " + " ♥️.",
+    "Number: " + Number.card_numb[2] + ". Colour: " + Colour.red + ". Suit: " + " ♥️.",
+    "Number: " + Number.card_numb[3] + ". Colour: " + Colour.red + ". Suit: " + " ♥️.",
+    "Number: " + Number.card_numb[4] + ". Colour: " + Colour.red + ". Suit: " + " ♥️.",
+    "Number: " + Number.card_numb[5] + ". Colour: " + Colour.red + ". Suit: " + " ♥️.",
+    "Number: " + Number.card_numb[6] + ". Colour: " + Colour.red + ". Suit: " + " ♥️.",
+    "Number: " + Number.card_numb[7] + ". Colour: " + Colour.red + ". Suit: " + " ♥️.",
+    "Number: " + Number.card_numb[8] + ". Colour: " + Colour.red + ". Suit: " + " ♥️.",
+    "Number: " + Number.card_numb[9] + ". Colour: " + Colour.red + ". Suit: " + " ♥️."]
+
+    #Jack
+    #Queen
+    #King
+
+    #Spades
+    Suit.spades = ["Number: " + Number.card_numb[0] + ". Colour: " + Colour.black + ". Suit: " + " ♠️.", 
+    "Number: " + Number.card_numb[1] + ". Colour: " + Colour.black + ". Suit: " + " ♠️.",
+    "Number: " + Number.card_numb[2] + ". Colour: " + Colour.black + ". Suit: " + " ♠️.",
+    "Number: " + Number.card_numb[3] + ". Colour: " + Colour.black + ". Suit: " + " ♠️.",
+    "Number: " + Number.card_numb[4] + ". Colour: " + Colour.black + ". Suit: " + " ♠️.",
+    "Number: " + Number.card_numb[5] + ". Colour: " + Colour.black + ". Suit: " + " ♠️.",
+    "Number: " + Number.card_numb[6] + ". Colour: " + Colour.black + ". Suit: " + " ♠️.",
+    "Number: " + Number.card_numb[7] + ". Colour: " + Colour.black + ". Suit: " + " ♠️.",
+    "Number: " + Number.card_numb[8] + ". Colour: " + Colour.black + ". Suit: " + " ♠️.",
+    "Number: " + Number.card_numb[9] + ". Colour: " + Colour.black + ". Suit: " + " ♠️."]
+
+    #Jack
+    #Queen
+    #King
+
 
 if __name__ == "__main__":
     main() 
